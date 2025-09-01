@@ -10,7 +10,7 @@ date
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 
 # 保存先 (例: /tmp/log.txt に追記)
-LOG_FILE="/tmp/log.txt"
+LOG_FILE="/app/output/log.txt"
 
 echo "[${TIMESTAMP}] - [${MESSAGE}]" >> "$LOG_FILE"
 
