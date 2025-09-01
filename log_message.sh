@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # このスクリプトは、MESSAGE という名前の環境変数を読み取ります。
-echo $MESSAGE
+echo "$MESSAGE"
 
 # $(date) コマンドで現在時刻を取得
-$(date)
+date
 
 # タイムスタンプを安全に取得
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
