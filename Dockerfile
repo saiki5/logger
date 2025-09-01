@@ -3,15 +3,17 @@
 FROM alpine:latest
 
 # 作業ディレクトリを /app に設定
-WORKDIR /app
+# WORKDIR /app
+WORKDIR /app/output
 
 # 依存ファイル → インストール
 # COPY greet.sh .
 # COPY greet.sh /greeter/docker-greeter/greet.sh
 
 # ローカルの log_message.sh を /app にコピー
-COPY log_message.sh /app/
 
+COPY log_message.sh /app/
+# COPY /app/app/log_message.sh
 # COPY greet.sh greet.sh
 # COPY greet.sh /usr/local/bin/greet.sh
 
